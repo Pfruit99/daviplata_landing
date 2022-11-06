@@ -1,0 +1,186 @@
+/* 
+1.posicionamiento: static, abs, relative, fixed
+2.box model (margin, padding, width, height)
+3.tipografia, tipos, tamaños, fuentes
+4.estilos de temas visual shadow-box, border
+5. miscelaneus u otros, reglas css y mas 
+
+*/
+
+:root {
+  /*colores*/
+  --red: #ec1b24;
+  --soft-white: #ffffff;
+  --button-gray: #5d5d5d;
+  --gray: #363636;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav {
+  background-color: var(--red);
+  height: 13vh;
+}
+
+/* estilos de nav logo y hashtag */
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  height: 70px;
+  width: 170px;
+  padding-left: 50px;
+}
+
+.logo-daviplata {
+  width: 100px;
+  max-width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  margin: 10px 128px;
+  align-self: flex-start;
+}
+
+.hashtag {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  text-decoration: none;
+  color: var(--soft-white);
+}
+
+/* fin estilos de logo y hashtag*/
+
+/* estilos de form*/
+
+/* boxshadow{
+    -webkit-box-shadow: 9px 11px 5px -2px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 9px 11px 5px -2px rgba(0, 0, 0, 0.43);
+  box-shadow: 9px 11px 5px -2px rgba(0, 0, 0, 0.43);
+
+} */
+
+.formulario-title {
+  text-align: center;
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.btn-secondary {
+  width: 200px;
+}
+
+/* fin de estilos de form  */
+
+/* fin estilos dentro del main*/
+
+.row .infopasos {
+  display: flex;
+  height: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+h2 .titulo-pasos {
+  border: 10px solid --red;
+  background-color: --;
+}
+
+header {
+  background-image: url(./assets/img/daviplata_plantilla_img-PhotoRoom.png);
+  background-repeat: no-repeat;
+  height: 335px;
+  position: relative;
+  padding: 120px;
+  background-position: center center;
+  background-position: 120px;
+}
+
+.container p {
+  display: inline;
+  z-index: 100;
+  position: absolute;
+}
+
+.video .video-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* estilos de footer*/
+.copyright {
+  height: 150px;
+  background-color: var(--gray);
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+footer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  position: relative;
+}
+
+footer p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--soft-white);
+}
