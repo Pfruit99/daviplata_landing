@@ -11,7 +11,7 @@
   /*colores*/
   --red: #ec1b24;
   --soft-white: #ffffff;
-  --button-gray: #5d5d5d;
+
   --gray: #363636;
 }
 
@@ -23,41 +23,34 @@ html {
 /* estilos de nav logo y hashtag */
 
 header {
-  height: 400px;
-  background-size: cover;
+  height: 500px;
+
   background-repeat: no-repeat;
   background-image: url(/assets/img/daviplata_plantilla_img-PhotoRoom.png);
   position: relative;
 }
 
-img {
-  min-height: 200px;
-  min-width: 200px;
-  height: auto;
-  width: auto;
-  max-height: 100%;
-  max-width: 100%;
+#logo {
+  min-height: 37px;
+  min-width: 85px;
 }
 
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: 700;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
+.HomeDaviplata {
+  background-color: var(--red);
 }
 
 .content-formulary {
-  position: absolute;
-  top: 11%;
-  left: 6%;
+  top: 14%;
+  left: 7%;
   transform: translatex(263%);
 }
 
-.row-EmprendedorApoyaEmprendedor {
+.row-PasoApasoParaParticipar {
+  background-color: var(--soft-white);
+}
+
+.row-EspacioEntrePasoseInstructivo {
+  background-color: var(--red);
 }
 
 /* fin estilos de logo y hashtag*/
@@ -71,39 +64,6 @@ img {
 /* fin de estilos de form  */
 
 /* fin estilos dentro del main*/
-
-.row .infopasos {
-  display: flex;
-  height: 500px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-}
-
-h2 .titulo-pasos {
-  border: 10px solid --red;
-  background-color: --;
-}
-
-.container {
-  max-width: 1200px;
-}
-
-.container p {
-  display: inline;
-  z-index: 100;
-  position: absolute;
-}
-
-.video .video-item {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
 
 .img-fluid {
   max-width: 100%;
@@ -149,21 +109,12 @@ h2 .titulo-pasos {
 }
 
 footer {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px;
-  position: relative;
+  background-color: var(--gray);
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
 }
 
-footer p {
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 19px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--soft-white);
+footer a {
+  text-decoration: none;
+  color: white;
 }
