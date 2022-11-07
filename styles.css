@@ -20,12 +20,24 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
-nav {
-  background-color: var(--red);
-  height: 13vh;
+/* estilos de nav logo y hashtag */
+
+header {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/daviplata_plantilla_img-PhotoRoom.png);
+  position: relative;
 }
 
-/* estilos de nav logo y hashtag */
+img {
+  min-height: 200px;
+  min-width: 200px;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
 
 #mainNav {
   padding-top: 1rem;
@@ -34,46 +46,23 @@ nav {
 }
 
 .logo {
-  display: flex;
-  height: 70px;
-  width: 170px;
-  padding-left: 50px;
-}
-
-.logo-daviplata {
-  width: 100px;
-  max-width: 100%;
+  width: 50px;
   height: 50px;
-  justify-content: space-between;
-  margin: 10px 128px;
-  align-self: flex-start;
 }
 
-.hashtag {
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 1.6rem;
-  text-decoration: none;
-  color: var(--soft-white);
+.content-formulary {
+  position: absolute;
+  top: 11%;
+  left: 6%;
+  transform: translatex(263%);
+}
+
+.row-EmprendedorApoyaEmprendedor {
 }
 
 /* fin estilos de logo y hashtag*/
 
 /* estilos de form*/
-
-/* boxshadow{
-    -webkit-box-shadow: 9px 11px 5px -2px rgba(0, 0, 0, 0.43);
-  -moz-box-shadow: 9px 11px 5px -2px rgba(0, 0, 0, 0.43);
-  box-shadow: 9px 11px 5px -2px rgba(0, 0, 0, 0.43);
-
-} */
-
-.formulario-title {
-  text-align: center;
-  color: var(--gray);
-  font-weight: bold;
-  font-size: 1.3rem;
-}
 
 .btn-secondary {
   width: 200px;
@@ -97,14 +86,8 @@ h2 .titulo-pasos {
   background-color: --;
 }
 
-header {
-  background-image: url(./assets/img/daviplata_plantilla_img-PhotoRoom.png);
-  background-repeat: no-repeat;
-  height: 335px;
-  position: relative;
-  padding: 120px;
-  background-position: center center;
-  background-position: 120px;
+.container {
+  max-width: 1200px;
 }
 
 .container p {
@@ -133,7 +116,7 @@ header {
   background-color: var(--gray);
 }
 
-.cards-wrapper {
+/* .cards-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -146,7 +129,7 @@ header {
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
   border-radius: 0;
-}
+} */
 .carousel-inner {
   padding: 1em;
 }
